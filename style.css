@@ -303,43 +303,7 @@ a {
   height: 100vh;
   margin-right: 150px;
 }
-/* Default */
-.container {
-  display: flex;
-}
 
-/* Mobile */
-.container.mobile {
-  flex-direction: column;
-}
-
-.container.mobile .sidebar {
-  width: 100%;
-  height: auto;
-}
-
-.container.mobile .infocontainer {
-  flex-direction: column;
-  text-align: center;
-}
-
-/* Tablet */
-.container.tablet {
-  flex-direction: row;
-}
-
-.container.tablet .sidebar {
-  width: 220px;
-}
-
-/* Desktop */
-.container.desktop {
-  flex-direction: row;
-}
-
-.container.desktop .sidebar {
-  width: 250px;
-}
 
 
 
