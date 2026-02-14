@@ -303,48 +303,43 @@ a {
   height: 100vh;
   margin-right: 150px;
 }
-/* ===== Android Mobile Phones ===== */
-@media (max-width: 600px) {
-  .container {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
-    height: auto;
-  }
-
-  .infocontainer {
-    flex-direction: column;
-    text-align: center;
-  }
+/* Default */
+.container {
+  display: flex;
 }
 
-/* ===== Android Tablets ===== */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .container {
-    flex-direction: row;
-  }
-
-  .sidebar {
-    width: 220px;
-  }
+/* Mobile */
+.container.mobile {
+  flex-direction: column;
 }
 
-/* ===== Large Screens / Desktop ===== */
-@media (min-width: 1025px) {
-  .container {
-    flex-direction: row;
-  }
-
-  .sidebar {
-    width: 250px;
-  }
+.container.mobile .sidebar {
+  width: 100%;
+  height: auto;
 }
 
+.container.mobile .infocontainer {
+  flex-direction: column;
+  text-align: center;
+}
 
+/* Tablet */
+.container.tablet {
+  flex-direction: row;
+}
 
+.container.tablet .sidebar {
+  width: 220px;
+}
 
+/* Desktop */
+.container.desktop {
+  flex-direction: row;
+}
+
+.container.desktop .sidebar {
+  width: 250px;
+}
 
 
 
