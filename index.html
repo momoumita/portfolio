@@ -51,8 +51,35 @@
   </div>
   </div>
   </div>
+  <script>
+function setResponsiveLayout() {
+  const width = window.innerWidth;
+  const container = document.querySelector('.container');
+
+  // Remove old classes
+  container.classList.remove('mobile', 'tablet', 'desktop');
+
+  if (width <= 600) {
+    container.classList.add('mobile');   // Android phones
+  } 
+  else if (width <= 1024) {
+    container.classList.add('tablet');   // Android tablets
+  } 
+  else {
+    container.classList.add('desktop');  // Desktop
+  }
+}
+
+// Run on load
+setResponsiveLayout();
+
+// Run on resize
+window.addEventListener('resize', setResponsiveLayout);
+</script>
+
   
 </body>
 
 </html>
+
 
