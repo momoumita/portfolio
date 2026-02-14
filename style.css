@@ -303,6 +303,37 @@ a {
   height: 100vh;
   margin-right: 150px;
 }
+/* ===== ADD AT BOTTOM ONLY ===== */
+
+/* Mobile fix */
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .infocontainer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Tablet fix */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    width: 220px;
+  }
+}
+
+
 
 
 
