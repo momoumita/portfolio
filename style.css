@@ -303,92 +303,43 @@ a {
   height: 100vh;
   margin-right: 150px;
 }
-/* ===== AUTO RESPONSIVE SYSTEM ===== */
+/* ===== Android Mobile Phones ===== */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
 
-/* Container auto layout */
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .infocontainer {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
-/* Sidebar auto scale */
-.sidebar {
-  flex: 1 1 220px;   /* auto resize */
-  max-width: 260px;
-  min-width: 180px;
+/* ===== Android Tablets ===== */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    width: 220px;
+  }
 }
 
-/* Main auto scale */
-.main {
-  flex: 3 1 300px;
-  width: 100%;
+/* ===== Large Screens / Desktop ===== */
+@media (min-width: 1025px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    width: 250px;
+  }
 }
-
-/* Info container auto layout */
-.infocontainer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-/* Dev info auto sizing */
-.devinfo {
-  flex: 1 1 280px;
-  max-width: 600px;
-}
-
-/* Image auto responsive */
-.pic img {
-  width: clamp(120px, 30vw, 180px);
-  height: clamp(120px, 30vw, 180px);
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-/* Text auto scale */
-.hello {
-  font-size: clamp(16px, 4vw, 22px);
-}
-
-.name {
-  font-size: clamp(24px, 6vw, 38px);
-}
-
-.about {
-  font-size: clamp(14px, 3.5vw, 18px);
-}
-
-/* Buttons auto layout */
-.button {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-}
-
-.button button {
-  padding: 10px 18px;
-  font-size: clamp(14px, 3vw, 16px);
-}
-
-/* Icons auto scale */
-.iccon a {
-  font-size: clamp(18px, 4vw, 26px);
-}
-
-/* Images auto */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-
-
-
-
 
 
