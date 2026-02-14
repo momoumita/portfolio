@@ -303,43 +303,6 @@ a {
   height: 100vh;
   margin-right: 150px;
 }
-/* ===== Android Mobile Phones ===== */
-@media (max-width: 600px) {
-  .container {
-    flex-direction: column;
-  }
 
-  .sidebar {
-    width: 100%;
-    height: auto;
-  }
-
-  .infocontainer {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-/* ===== Android Tablets ===== */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .container {
-    flex-direction: row;
-  }
-
-  .sidebar {
-    width: 220px;
-  }
-}
-
-/* ===== Large Screens / Desktop ===== */
-@media (min-width: 1025px) {
-  .container {
-    flex-direction: row;
-  }
-
-  .sidebar {
-    width: 250px;
-  }
-}
 
 
