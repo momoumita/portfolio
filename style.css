@@ -303,10 +303,8 @@ a {
   height: 100vh;
   margin-right: 150px;
 }
-/* ===== ADD AT BOTTOM ONLY ===== */
-
-/* Mobile fix */
-@media (max-width: 767px) {
+/* ===== Android Mobile Phones ===== */
+@media (max-width: 600px) {
   .container {
     flex-direction: column;
   }
@@ -322,8 +320,8 @@ a {
   }
 }
 
-/* Tablet fix */
-@media (min-width: 768px) and (max-width: 1023px) {
+/* ===== Android Tablets ===== */
+@media (min-width: 601px) and (max-width: 1024px) {
   .container {
     flex-direction: row;
   }
@@ -333,7 +331,16 @@ a {
   }
 }
 
+/* ===== Large Screens / Desktop ===== */
+@media (min-width: 1025px) {
+  .container {
+    flex-direction: row;
+  }
 
+  .sidebar {
+    width: 250px;
+  }
+}
 
 
 
